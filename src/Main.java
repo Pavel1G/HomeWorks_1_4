@@ -43,5 +43,7 @@ public class Main {
                 System.out.println(pastYear);
             }
         }
+        System.out.println();
+        System.out.println("------------------------------------");
     }
 }
