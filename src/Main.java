@@ -3,6 +3,8 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
+        task5();
     }
 
     // Задача 1.
@@ -43,6 +45,40 @@ public class Main {
                 System.out.println(pastYear);
             }
         }
+        System.out.println();
+        System.out.println("------------------------------------");
+    }
+
+    //Задача 4.
+    public static void task4() {
+        for (int i = 1; i <= 30; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println(i + ": ping pong");
+            } else if (i % 5 == 0) {
+                System.out.println(i + ": pong");
+            } else if (i % 3 == 0) {
+                System.out.println(i + ": ping");
+            } else {
+                System.out.println(i + ":");
+            }
+        }
+        System.out.println();
+        System.out.println("------------------------------------");
+    }
+
+    //Задача 5.
+    public static void task5() {
+        int startValue = 0;
+        int nextValue = 1;
+
+        System.out.printf(startValue + " " + nextValue + " ");
+        for (int i = 3; i <= 10; i++) {
+            int thirdValue = startValue + nextValue;
+            System.out.printf(thirdValue + " ");
+            startValue = nextValue;
+            nextValue = thirdValue;
+        }
+
         System.out.println();
         System.out.println("------------------------------------");
     }
